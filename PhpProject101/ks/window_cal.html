@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>カレンダー</title>
+<style type="text/css">
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	margin: 0px;
+	padding: 0;
+}
+#container{
+  padding: 20px;
+}
+table{
+	border: #dddddd solid 1px;
+	border-collapse: collapse;
+	line-height:1em;
+  float: left;
+  margin: 5px;
+}
+table th{
+	border: #dddddd solid 1px;
+	background-color: #162F6B;
+	padding: 5px;
+	color: #FFFFFF;
+  font-size: 0.9em;
+}
+table td{
+	border: #dddddd solid 1px;
+	padding:10px;
+  text-align: right;
+  cursor: pointer;
+}
+table td:hover{
+  background-color: #FFF09E;
+}
+
+/**************************
+ * ボタン用
+ **************************/
+.calendar_button a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+	display: inline-block;
+	background-color: #878787;
+	padding: 5px;
+	border-radius: 3px;
+}
+.calendar_button a:hover{
+	background-color: #9E9E9E;
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="check.calendar.js"></script>
+<script type="text/javascript">
+ $(function(){
+    $('.mycalendar').cehckcalendar({
+        'start'     :'2015-06',  //開始月を指定 yyyy-mm
+        'week'      : ["日", "月", "火", "水", "木", "金", "土"],
+        'roop'      : 3,          //何ヶ月分表示するか
+        'prefix'    : 'neko_',    //カレンダーで使われる変数名 他と被らないようユニークに
+        'delimiter' : '/',        //送信時の日付の区切り文字 yyy/mm/dd
+        'td_on'     : '#BE8EB5',  //日付をONにしたときの背景色
+        'td_off'    : '#FFFFFF',  //日付をOFFにしたときの背景色
+        'send'      : 'test'      //postするときのinputのid <input type="hidden" id="days" name="days" >
+    });
+ });
+</script>
+</head>
+
+<body>
+  <div id="container">
+    <form id="form1" name="form1" method="post" action="get.php" target="_blank">
+      <input type="hidden" id="test" name="test" >
+      <div class="mycalendar" style="overflow:hidden;">カレンダーが入る場所</div>
+      
+      <br />
+      <input type="submit" value="送信" style="padding: 5px; font-size: 1em;">
+    </form>
+  </div>
+
+
+</body>
+</html>

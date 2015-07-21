@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品登録</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- 
+ファイルの先頭の HTML タグを囲む条件付きコメントの詳細については、以下を参照 : 
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Modernizr (http://www.modernizr.com/) のカスタマイズされたビルドを使用している場合は、以下を実行 : 
+* js へのリンクをここに挿入
+* html5shiv への以下のリンクを削除
+* 先頭の html タグに「js 以外の」クラスを追加
+* Modernizr ビルドに MQ Polyfill を含めた場合は、respond.min.js へのリンクも削除可能 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <!--<div id="LayoutDiv1">追加の可変グリッドレイアウトの Div タグの挿入パネルを使用。 メモ : すべてのレイアウト Div タグは、"gridContainer" div タグ内に直接挿入する必要があります。 ネストされたレイアウト Div タグは現在サポートされていません。</div>-->
+<Div Align="center">
+<form name="form" id="form">野菜
+  <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+    <option selected>選択▼</option>
+    <option value="window_code2.html">葉菜</option>
+    <option value="window_code2.html">根菜</option>
+  </select>
+</form><br />
+<input name="提案" type="button" value="果物"><br /><br />
+<input name="提案" type="button" value="加工品"><br /><br />
+<input name="提案" type="button" value="資材">
+</Div>
+</div>
+</body>
+</html>

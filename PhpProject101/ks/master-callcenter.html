@@ -1,0 +1,158 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>マスタ管理</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- 
+ファイルの先頭の HTML タグを囲む条件付きコメントの詳細については、以下を参照 : 
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Modernizr (http://www.modernizr.com/) のカスタマイズされたビルドを使用している場合は、以下を実行 : 
+* js へのリンクをここに挿入
+* html5shiv への以下のリンクを削除
+* 先頭の html タグに「js 以外の」クラスを追加
+* Modernizr ビルドに MQ Polyfill を含めた場合は、respond.min.js へのリンクも削除可能 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('button/syouhintouroku-g.png','button/jyutyuujyoukyou-g.png','button/hattyuujyoukyou-g.png','button/teiansyouhinkanri-g.png','button/seikyuukanri-g.png','button/masterkanri-g.png','button/loginjyouhoukanri-g.png')">
+<div class="gridContainer clearfix">
+  <!--<div id="LayoutDiv1">追加の可変グリッドレイアウトの Div タグの挿入パネルを使用。 メモ : すべてのレイアウト Div タグは、"gridContainer" div タグ内に直接挿入する必要があります。 ネストされたレイアウト Div タグは現在サポートされていません。</div>-->
+<div id="headerArea"><a href="http://210.140.164.145/ks/">九州屋受発注システム</a><br><Div Align="right">
+＜ログイン名＞がログイン中
+</Div>
+<center>
+  <table width="70%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="11%"><a href="http://210.140.164.145/ks/regist.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','button/syouhintouroku-g.png',1)"><img id="Image1" src="button/syouhintouroku-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/list.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','button/jyutyuujyoukyou-g.png',1)"><img id="Image2" src="button/jyutyuujyoukyou-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/hattyu.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','button/hattyuujyoukyou-g.png',1)"><img id="Image3" src="button/hattyuujyoukyou-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/teian-itiran.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','button/teiansyouhinkanri-g.png',1)"><img id="Image4" src="button/teiansyouhinkanri-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/seikyu.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','button/seikyuukanri-g.png',1)"><img id="Image5" src="button/seikyuukanri-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/zaiko.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','button/zaiko-g.png',1)"><img id="Image8" src="button/zaiko-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/center.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','button/center-g.png',1)"><img id="Image9" src="button/center-b.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/master.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','button/masterkanri-g.png',1)"><img id="Image6" src="button/masterkanri-g.png"></a></td>
+    <td width="11%"><a href="http://210.140.164.145/ks/mypage.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','button/loginjyouhoukanri-g.png',1)"><img id="Image7" src="button/loginjyouhoukanri-b.png"></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">登録</td>
+    <td bgcolor="#CCCCCC"><a href="http://210.140.164.145/ks/master-callcenter-list.html">リスト</a></td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+    <td bgcolor="#CCCCCC">&nbsp;</td>
+  </tr>
+</table></center>
+</div>
+<div id="contentsArea" align="center"><br />
+<h2>配送センター担当者マスタ</h2>
+  <table class="sample_06" width="60%" border="0" cellspacing="3" cellpadding="3" >
+  <tr>
+    <td width="25%" bgcolor="#CCCCCC">パスワード</td>
+    <td width="30%"><form name="form2" method="post" action="">
+      <label for="syouhimemei"></label>
+      <input type="password" name="pw" id="pw">
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">担当者</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="responsible" id="responsible">
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">連絡先</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="category" id="category">
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">メールアドレス</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="tel" id="tel">
+    </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">所属エリア</td>
+    <td><form name="form3" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="RadioGroup1" value="東日本配送センター" id="RadioGroup1_0">
+          東日本配送センター</label>
+        <br>
+        <label>
+          <input type="radio" name="RadioGroup1" value="西日本配送センター" id="RadioGroup1_1">
+          西日本配送センター</label>
+        <br>
+      </p>
+    </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">作成日</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="id" id="id">
+      </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">更新日</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="id" id="id">
+    </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC">ステータス</td>
+    <td><form name="form1" method="post" action="">
+      <label for="id"></label>
+      <input type="text" name="id" id="id">
+    </form></td>
+  </tr>
+</table>
+<br />
+<input name="提案" type="button" value="登録">
+<br />
+</div>
+</div>
+</body>
+</html>

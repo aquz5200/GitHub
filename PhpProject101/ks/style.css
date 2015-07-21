@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* 標準可変メディア
+   メモ : 可変メディアでは、HTML からメディアの高さおよび幅の属性を削除する必要がある
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 では最大幅がサポートされていないため、デフォルトで幅 100% に設定される */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver 可変グリッドプロパティ
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	以下からヒントを入手 : Ethan Marcotte 氏の「レスポンシブ Web デザイン」 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	および Joni Korpi 氏の「Golden Grid System」
+	http://goldengridsystem.com/ 
+*/
+
+/* モバイルレイアウト : 480 px およびそれ以下. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* タブレットレイアウト : 481 px ～ 768 px。モバイルレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* デスクトップレイアウト : 769 px ～最大 1232 px。モバイルレイアウトとタブレットレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+.sample_05{
+width: 100%;
+border-collapse: collapse;
+border-top: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+.sample_05 th{
+/*width:5.8%; */
+padding: 6px; text-align: left;
+vertical-align: top;
+color: #666666;
+background: url(bg.jpg) repeat-x top left #eee;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+.sample_05 td{
+/*width: 5.8%; */
+padding: 6px;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+
+.sample_06{
+width: 50%;
+border-collapse: collapse;
+border-top: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+.sample_06 th{
+/*width:5.8%; */
+padding: 6px; text-align: left;
+vertical-align: top;
+color: #666666;
+background: url(bg.jpg) repeat-x top left #eee;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+.sample_06 td{
+/*width: 5.8%; */
+padding: 6px;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+
+    body{
+        margin: 0;
+        padding: 150px 0 50px 0;
+    }
+    * html body{
+        overflow: hidden;
+    }
+    div#headerArea {
+        position: fixed !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background-color: #4E9ABE;
+        color: #fff;
+    }
+    div#footerArea {
+        position: fixed !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #4E9ABE;  
+        color: #fff;  
+    }
+    * html div#contentsArea{
+        height: 100%;
+        overflow: auto;
+    }
+
+.sample_07{
+width: 100%;
+border-collapse: collapse;
+border-top: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+.sample_07 th{
+/*width:5.8%; */
+padding: 6px; text-align: left;
+vertical-align: top;
+color: #666666;
+background: url(bg.jpg) repeat-x top left #eee;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+.sample_07 td{
+/*width: 5.8%; */
+padding: 6px;
+border-bottom: 1px dotted #999;
+border-left: 1px solid #ccc;
+}
+.sample_07 tr:nth-child(2n+1) {
+	background:#F0FFFF;
+}
